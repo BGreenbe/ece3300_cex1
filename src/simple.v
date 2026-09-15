@@ -22,7 +22,8 @@ module simple(
 	      output reg [6:0] result);
 	   always @(a)
 begin
-	result = (7'b0000000 << a);
+	
+	result = ((2 ** a ) - 1 );
 end
 
 endmodule
