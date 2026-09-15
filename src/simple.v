@@ -20,8 +20,9 @@
 module simple(
 	      input [2:0]  a,
 	      output reg [6:0] result);
-   
-// add your code here
+   begin
+	result = (7'b000_000_0 << a );
+	end
    
 endmodule
 
