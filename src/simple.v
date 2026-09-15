@@ -21,7 +21,7 @@ module simple(
 	      input [2:0]  a,
 	      output reg [6:0] result);
    begin
-	result = (7'b000_000_0 << a );
+	   assign result = ~(~0000000 << a); 
 	end
    
 endmodule
