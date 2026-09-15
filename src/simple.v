@@ -20,11 +20,9 @@
 module simple(
 	      input [2:0]  a,
 	      output reg [6:0] result);
-   begin
 	   always @(a)
-	   assign result = 7'b000_000_0 << a); 
-	end
-   
+begin
+	result = (7'b0000000 << a);
+end
+
 endmodule
-
-
