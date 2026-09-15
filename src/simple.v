@@ -22,7 +22,7 @@ module simple(
 	      output reg [6:0] result);
    begin
 	   always @(a)
-	   assign reg = 7'b000_000_0 << a); 
+	   assign result = 7'b000_000_0 << a); 
 	end
    
 endmodule
